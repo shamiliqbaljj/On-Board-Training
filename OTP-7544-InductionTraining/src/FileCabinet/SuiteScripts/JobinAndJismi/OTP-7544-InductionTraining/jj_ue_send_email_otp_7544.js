@@ -51,37 +51,7 @@ define(['N/email', 'N/record'],
                 let recordType = scriptContext.newRecord.type;
                 let companyname;
                 companyname = myRecord.getValue({ fieldId: "companyname" });
-                if (recordType !== "contact")
-                {
-
-                let body_of_mail;
-                if (scriptContext.type === "create") {
-                    body_of_mail = `Record created,
-                    Entity type: ${recordType}
-                    Internal ID: ${internId}
-                    Company name: ${companyname}`;
-                    log.debug({ title: 'Email Body', details: body_of_mail });
-                    email.send({
-                        author: 7633,
-                        recipients: user_email,
-                        subject: scriptContext.type,
-                        body: body_of_mail
-                    });
-                }
-                if (scriptContext.type === "delete") {
-                    body_of_mail = `Record deleted,
-                    Internal ID: ${internId}
-                    Entity type: ${recordType}`;
-                    log.debug({ title: 'Email Body', details: body_of_mail });
-                    email.send({
-                        author: 7633,
-                        recipients: user_email,
-                        subject: scriptContext.type,
-                        body: body_of_mail
-                    });
-                }
-            }
-            else (recordType === 'contact')
+                if (recordType === 'contact')
             {
                 let body_of_mail;
                 if (scriptContext.type === "create") {
