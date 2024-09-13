@@ -1,4 +1,22 @@
 /**
+ * 
+ * 
+ * 
+ * OTP 7882 - Custom page for display sales order based on the status
+ * 
+ * 
+ * ------------------------------------------------------------------------
+ * 
+ * Author : Jobin And Jismi IT Services
+ * 
+ * Date Created : 09 - September - 2024
+ * 
+ * Description : This script is for creating a Custom page for displaying sales order based on the status
+ * 
+ * 
+ * 
+ * ------------------------------------------------------------------------
+ * 
  * @NApiVersion 2.1
  * @NScriptType Suitelet
  */
